@@ -1,65 +1,451 @@
-Concepts You Should Learn Next
+Great question. This is exactly how a developer should think:
+
+> "What concepts do I need before I can build these features?"
+
+Let's map feature → concepts.
+
+# Already Learned From Calculator
+
+You already used:
+
+✅ Variables
+
+✅ Functions
+
+✅ Parameters
+
+✅ Conditionals (`if/else`)
+
+✅ DOM Selection
+
+✅ Event Listeners
+
+✅ Loops (`forEach`)
+
+✅ DOM Manipulation
+
+✅ Error Handling (`try/catch`)
+
+---
+
+# 1. Backspace Button
+
+Feature:
+
+```text
+12345
+↓
+1234
+```
+
+Concepts Needed:
+
+### Strings
+
+```js
+slice()
+substring()
+length
+```
+
+Example:
+
+```js
+"12345".slice(0,-1)
+```
+
+---
+
+# 2. Keyboard Support
+
+Feature:
+
+```text
+Press 7
+Press +
+Press Enter
+```
+
+Concepts Needed:
+
+### Keyboard Events
+
+```js
+keydown
+keyup
+```
+
+### Event Object
+
+```js
+event.key
+```
+
+Example:
+
+```js
+event.key === "7"
+```
+
+---
+
+# 3. Prevent Multiple Operators
+
+Feature:
+
+```text
+12++
+```
+
+should become
+
+```text
+12+
+```
+
+Concepts Needed:
+
+### String Access
+
+```js
+str.length
+str[index]
+```
+
+### Arrays (optional)
+
+### Logic Building
+
+Check last character.
+
+Example:
+
+```js
+12+
+```
+
+before adding
+
+```js
+*
+```
+
+---
+
+# 4. Prevent Multiple Decimals
+
+Feature:
+
+```text
+12.3.4
+```
+
+Not allowed.
+
+Concepts Needed:
+
+### String Methods
+
+```js
+includes()
+split()
+```
+
+Example:
+
+```js
+"12.3".includes(".")
+```
+
+---
+
+# 5. Scientific Calculator
+
+Feature:
+
+```text
+√25
+```
+
+Concepts Needed:
+
+### Math Object
+
+```js
+Math.sqrt()
+Math.pow()
+Math.floor()
+Math.ceil()
+```
+
+---
+
+# 6. History Panel
+
+Feature:
+
+```text
+2+3=5
+5*4=20
+```
+
+Concepts Needed:
+
+### Arrays
+
+```js
+push()
+pop()
+```
+
+### DOM Creation
+
+```js
+createElement()
+appendChild()
+```
+
+### Rendering Data
+
+---
+
+# 7. Local Storage
+
+Feature:
+
+Refresh page:
+
+```text
+History remains
+```
+
+Concepts Needed:
+
+### Browser Storage
+
+```js
+localStorage
+```
+
+### JSON
+
+```js
+JSON.stringify()
+JSON.parse()
+```
+
+This is a very important JavaScript topic.
+
+---
+
+# 8. Event Delegation
+
+Feature:
+
+One listener controls all buttons.
+
+Concepts Needed:
+
+### Event Bubbling
+
+Understand:
+
+```text
+Button
+↓
+Parent
+↓
+Document
+```
+
+### Event Target
+
+```js
+event.target
+```
+
+You already partially know this.
+
+---
+
+# 9. Theme Switch
+
+Feature:
+
+```text
+Dark
+Light
+```
+
+Concepts Needed:
+
+### Class Manipulation
+
+```js
+classList.add()
+classList.remove()
+classList.toggle()
+```
+
+### CSS Variables
+
+```css
+--primary-color
+```
+
+---
+
+# 10. Responsive Design
+
+Feature:
+
+Works on phone.
+
+Concepts Needed:
+
+### Media Queries
+
+```css
+@media
+```
+
+### Relative Units
+
+```css
+%
+rem
+vw
+vh
+```
+
+---
+
+# 11. Remove eval()
+
+Feature:
+
+Calculator calculates itself.
+
+Concepts Needed:
+
+### Advanced JavaScript
+
+This is where things become interesting.
+
+You'll need:
+
+#### Arrays
+
+```js
+split()
+```
+
+#### Stack Concepts
+
+```js
+push()
+pop()
+```
+
+#### Expression Parsing
+
+Example:
+
+```text
+2+3*4
+```
+
+becomes:
+
+```js
+["2","+","3","*","4"]
+```
+
+then evaluated.
+
+This is much later.
+
+---
+
+# Concepts You Should Learn Next
 
 After finishing this calculator, I'd learn in this order:
 
-Phase 1
+### Phase 1
 
-      ✅ Strings
-      
-      slice()
-      substring()
-      includes()
-      split()
-Phase 2
+✅ Strings
+
+* slice()
+* substring()
+* includes()
+* split()
+
+---
+
+### Phase 2
 
 ✅ Arrays
 
-      push()
-      pop()
-      shift()
-      unshift()
-      forEach()
-      map()
-      filter()
-Phase 3
+* push()
+* pop()
+* shift()
+* unshift()
+* forEach()
+* map()
+* filter()
+
+---
+
+### Phase 3
 
 ✅ DOM Creation
 
-      createElement()
-      appendChild()
-      remove()
-      replaceChild()
-Phase 4
+* createElement()
+* appendChild()
+* remove()
+* replaceChild()
 
-      ✅ Keyboard Events
-      
-      keydown
-      keyup
-Phase 5
+---
 
-      ✅ Local Storage
-      
-      localStorage
-      JSON
-Phase 6
+### Phase 4
 
-      ✅ Event Delegation & Bubbling
+✅ Keyboard Events
 
-Phase 7
+* keydown
+* keyup
+
+---
+
+### Phase 5
+
+✅ Local Storage
+
+* localStorage
+* JSON
+
+---
+
+### Phase 6
+
+✅ Event Delegation & Bubbling
+
+---
+
+### Phase 7
 
 ✅ Advanced Problem Solving
 
-      Stacks
-      Parsing
-      Custom calculator engine
+* Stacks
+* Parsing
+* Custom calculator engine
 
 If you master those concepts through projects, you'll be ready for projects like:
 
-      To-Do App
-      Notes App
-      Expense Tracker
-      Weather App
-      Quiz App
-      E-commerce Cart
-      
-      without feeling lost.
+* To-Do App
+* Notes App
+* Expense Tracker
+* Weather App
+* Quiz App
+* E-commerce Cart
+
+without feeling lost.
