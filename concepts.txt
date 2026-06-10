@@ -1,0 +1,65 @@
+Concepts You Should Learn Next
+
+After finishing this calculator, I'd learn in this order:
+
+Phase 1
+
+      ✅ Strings
+      
+      slice()
+      substring()
+      includes()
+      split()
+Phase 2
+
+✅ Arrays
+
+      push()
+      pop()
+      shift()
+      unshift()
+      forEach()
+      map()
+      filter()
+Phase 3
+
+✅ DOM Creation
+
+      createElement()
+      appendChild()
+      remove()
+      replaceChild()
+Phase 4
+
+      ✅ Keyboard Events
+      
+      keydown
+      keyup
+Phase 5
+
+      ✅ Local Storage
+      
+      localStorage
+      JSON
+Phase 6
+
+      ✅ Event Delegation & Bubbling
+
+Phase 7
+
+✅ Advanced Problem Solving
+
+      Stacks
+      Parsing
+      Custom calculator engine
+
+If you master those concepts through projects, you'll be ready for projects like:
+
+      To-Do App
+      Notes App
+      Expense Tracker
+      Weather App
+      Quiz App
+      E-commerce Cart
+      
+      without feeling lost.
